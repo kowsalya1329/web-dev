@@ -1,112 +1,90 @@
-.Text{
-		  font-size: 25rem;
-	    text-align: center;
-      height:100vh;
-      line-height: 100vh;
-	    color: black;
-	    background: pink;
-	   	font-family:  fantasy;
-	    font-weight: 700;
-      text-shadow: 5px 5px 0px #993c2f, 
-                  10px 10px 0px #995d2f, 
-                  15px 15px 0px #992f89, 
-                  20px 20px 0px #74992f, 
-                  25px 25px 0px #56992f, 
-                  30px 30px 0px #2f994f, 
-                  35px 35px 0px #2f9989,
-                  40px 40px 0px #992f2f, 
-                  45px 45px 0px #992f61;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ main {
+    font-family: 'Rajdhani', sans-serif;
+ }
+
+ .landing {
+    min-height: 100vh;
+    background: url("./cyberTruck.jpg");
+    background-size: cover;
+    padding: 0rem 5rem; 
+ }
+
+ nav {
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     min-height:10vh;
+     color: white;
+ }
+
+ .nav-links{
+     display:flex;
+     list-style: none;
+ }
+
+ .nav-links li{
+     padding-left: 10rem;
+     font-size: 1.2rem;
+ }
+
+ #logo{
+    font-family: 'Rajdhani', sans-serif;
+     font-weight: lighter;
+     font-size: 2rem;
+ }
+
+ .big-text{
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%,-30%);
+     font-size: 5rem;
+     font-family: 'Audiowide', cursive;
+     color: rgb(253, 253, 253);
+     
+ }
+
+ .intro {
+     background: black;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width:100%;
+     height:100%;
+     display: flex;
+     justify-content: center;
+     align-items:center;
+ }
+
+ .slider {
+    background: rgb(94, 96, 99);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    transform: translateY(100%);
 }
 
-.container{
-  width: auto;
-}
+ .intro-text {
+     color: rgb(239, 244, 248);
+     font-family: 'Rajdhani', sans-serif;
+     font-size: 2rem;    
+ }
 
-p{
-    text-align: center;
-    font-family: "cursive";
-    font-size:0.8rem;
-}
+ .hide {
+     background: black;
+     overflow: hidden;
+ }
 
-a{
-    color: #d52e3f;
-    text-decoration: none;
-    font-family: 'Niconne', copperplate;
-    font-size: 1.2rem;
+ .hide span {
+     transform: translateY(100%);
+     display: inline-block;
+ }
 
-}
-
-
-.btn {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  font-size: 0.8rem;
-  font-weight: 200;
-  line-height: 0.5;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "fantasy", cursive;
-  font-weight: 700;
-}
-.btn:hover, .btn:focus {
-  color: #fff;
-  outline: 0;
-}
-
-.first {
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.first:hover {
-  box-shadow: 0 0 40px 40px #e74c3c inset;
-}
-
-
-@media screen and (min-width: 360px){
-  .Text{
-    font-size: 5rem;
-    text-shadow: 2px 2px 0px #993c2f,
-                  4px 4px 0px #995d2f,
-                  6px 6px 0px #992f89, 
-                  8px 8px 0px #74992f,
-                  10px 10px 0px #56992f,  
-                  12px 12px 0px #2f994f,
-                  14px 14px 0px #2f9989,
-                  16px 16px 0px #992f2f, 
-                  18px 18px 0px #992f61;
-    
-  }
-}
-
-@media screen and (min-width: 960px){
-  .Text{
-    font-size: 15rem;
-    text-shadow: 5px 5px 0px #993c2f, 
-                  10px 10px 0px #995d2f, 
-                  15px 15px 0px #992f89, 
-                  20px 20px 0px #74992f, 
-                  25px 25px 0px #56992f, 
-                  30px 30px 0px #2f994f, 
-                  35px 35px 0px #2f9989,
-                  40px 40px 0px #992f2f, 
-                  45px 45px 0px #992f61;
-                  
-  }
-}
